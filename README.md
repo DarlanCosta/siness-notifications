@@ -1,2 +1,0 @@
-# siness-notifications
-Siness Notification
