@@ -1,11 +1,11 @@
 import { Body, Controller, Get, Post } from "@nestjs/common";
 import { PrismaService } from "./prisma.service";
-import { CreateNotificationBody } from "./create-notification-body";
+import { CreateNotificationBody } from "./http/dtos/create-notification-body";
 
 import { randomUUID } from "node:crypto";
 
 @Controller("notifications")
-export class AppController {
+export class NotificationsController {
   constructor(private readonly prisma: PrismaService) {}
 
   @Get()
